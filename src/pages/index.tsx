@@ -1,7 +1,6 @@
 import { getOptionsForVote } from "@/utils/getRandomPokemon";
 import { trpc } from "@/utils/trpc";
-import { getServers } from "dns";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [ids, updateIds] = useState(getOptionsForVote());
